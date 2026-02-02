@@ -4,7 +4,6 @@ venv
 __pycache__/
 *.pyc
 *.pyo
-models/
-*.pt
-*.h5
-*.pkl
+
+best_model.pth
+*.pth
