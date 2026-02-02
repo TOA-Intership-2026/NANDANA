@@ -1,2 +1,7 @@
 venv
 .env
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+best_model.pth/
