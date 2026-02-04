@@ -4,6 +4,7 @@ import { predictImage } from "../services/api";
 import catImg from "../assets/cattt.png";
 import dogImg from "../assets/doggg.png";
 import Ballpit from "../components/Ballpit";
+import InputFileUpload from "../components/UploadButton";
 
 function Home() {
   const [file, setFile] = useState(null);
@@ -73,21 +74,7 @@ function Home() {
 }}
 
 >
-  <input
-    type="file"
-    accept="image/*"
-    onChange={handleFileChange}
-    style={{
-      backgroundColor: "#ebd5e0", // pink
-      color: "white",
-      padding: "12px 12px",
-      borderRadius: "8px",
-      border: "none",
-      cursor: "pointer",
-      fontSize: "1rem",
-      fontWeight: "500",
-    }}
-  />
+  <InputFileUpload handleFile={handleFileChange}></InputFileUpload>
 </div>
 
         {preview && (

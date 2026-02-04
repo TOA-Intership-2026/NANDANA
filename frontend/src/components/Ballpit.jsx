@@ -6,7 +6,7 @@ export default function Ballpit({
   friction = 0.9975,
   wallBounce = 1,
   followCursor = false,
-  colors = ["#5227FF", "#7cff67", "#ff6b6b", "#ffffff", "#854b3d"],
+  colors = ["#9c622b", "#000000", "#ff6b6b", "#ffffff", "#854b3d"],
 }) {
   const canvasRef = useRef(null);
 
